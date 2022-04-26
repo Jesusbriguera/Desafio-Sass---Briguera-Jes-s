@@ -1,0 +1,30 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "headerNav headerNav headerNav"
+    "menu-nav menu-nav menu-nav"
+    "imagenIndex resumen imagenOferta"
+    "piePagina piePagina piePagina";
+    grid-template-rows: 100px 100px 2fr 75px;
+    grid-template-columns: 20% auto 15%;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+    background-image: url(../img/store-g1cc1fbfc7_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+#imagenOferta {
+    grid-area: imagenOferta;
+    }
+    
+    #piePagina {
+        grid-area: piePagina;
+    }
+    
+#menu-nav{
+    grid-area: menu-nav;
+    }
