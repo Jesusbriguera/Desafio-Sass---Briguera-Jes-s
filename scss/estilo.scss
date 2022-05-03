@@ -1,4 +1,6 @@
+@import "mixins";
 @import "variables";
+@import "mapa";
 @import "grillas";
 @import "tipografias";
 
@@ -41,20 +43,28 @@ text-align: center;
 .footerStyle{
     text-align: center;
     background-color: black;
-    color: white;
+    color: map-get($estilos,white);
     margin-top: 15%;
 }
 .card1{
     margin: 20px;
+    border-radius:20px;
+    text-align:center;
+    width:200px;
+	height:500px;
+	border:2px solid black;
 }
 .card2{
-    margin: 20px;
+    @extend .card1;
+    background-color: yellow
 }
 .card3{
-    margin: 20px;
+    @extend .card1;
+    background-color: orange
 }
 .card4{
-    margin: 20px;
+    @extend .card1;
+    background-color: aquamarine;
 }
 .iframeStyle{
     margin: 5% 20%;
@@ -139,8 +149,7 @@ text-align: center;
 /* ANIMACIONES*/
 
 .tituloSeccion {
-    width: 100px;
-    height: 100px;
+    @include medidas (100px,100px);
     background-color: green;
     animation-name: un_efecto;
     animation-iteration-count: infinite;
@@ -179,8 +188,7 @@ text-align: center;
 }
 .iframeStyle{
     margin: 5% 15%;
-    width: 350px;
-    height: 250px;
+    @include medidas (350px,250px);
 }
 #resumen {
     text-align: center;
@@ -201,9 +209,7 @@ text-align: center;
     margin: 2px;
     margin-left: 33%;   
 }
-.iframeStyle{
-    margin: 5%;
-    }
+
 #img-header{
     margin-left: 38%;
     width: 100px;

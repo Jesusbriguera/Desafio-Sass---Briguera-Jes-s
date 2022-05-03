@@ -27,7 +27,6 @@
 
 #resumen {
   grid-area: resumen;
-  text-align: center;
   background-color: rgb(195, 195, 231);
   padding: 30px;
 }
@@ -98,24 +97,28 @@
 .footerStyle {
   text-align: center;
   background-color: black;
-  color: white;
   margin-top: 15%;
 }
 
-.card1 {
+.card1, .card4, .card3, .card2 {
   margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 200px;
+  height: 500px;
+  border: 2px solid black;
 }
 
 .card2 {
-  margin: 20px;
+  background-color: yellow;
 }
 
 .card3 {
-  margin: 20px;
+  background-color: orange;
 }
 
 .card4 {
-  margin: 20px;
+  background-color: aquamarine;
 }
 
 .iframeStyle {
@@ -207,8 +210,8 @@
 
 /* ANIMACIONES*/
 .tituloSeccion {
-  width: 100px;
   height: 100px;
+  width: 100px;
   background-color: green;
   animation-name: un_efecto;
   animation-iteration-count: infinite;
@@ -260,8 +263,8 @@
 
   .iframeStyle {
     margin: 5% 15%;
-    width: 350px;
     height: 250px;
+    width: 350px;
   }
 
   #resumen {
@@ -285,10 +288,6 @@
     height: 200px;
     margin: 2px;
     margin-left: 33%;
-  }
-
-  .iframeStyle {
-    margin: 5%;
   }
 
   #img-header {
