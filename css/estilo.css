@@ -54,11 +54,6 @@
   font-size: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .pagesStyle {
   background-image: url(../img/store-g1cc1fbfc7_1920.jpg);
   background-position: center;
@@ -94,10 +89,16 @@
   text-align: center;
 }
 
-.footerStyle {
-  text-align: center;
-  background-color: black;
-  margin-top: 15%;
+#headerNav {
+  background-color: rgb(183, 183, 201);
+}
+
+.parallax {
+  background-image: url(../img/candies-g623ec2e50_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card1, .card4, .card3, .card2 {
@@ -121,38 +122,12 @@
   background-color: aquamarine;
 }
 
-.iframeStyle {
-  margin: 5% 20%;
-}
-
-#contactoFormulario {
-  margin: 5% 25%;
-  background-color: blanchedalmond;
-}
-
-/* Menu Cambios con Boostrap */
-#ubacionStyle {
-  margin: 50px;
-  text-align: center;
-}
-
-#servicioStyle {
-  margin: 50px;
-}
-
-.menuStyle {
-  margin: 25px;
-  width: 95%;
-  padding-left: 27%;
-}
-.menuStyle:hover {
-  font-size: 20px;
-}
-
-.menuPages {
-  padding-right: 22%;
-  margin: 25px;
-  width: 95%;
+#enlaceWhatsapp {
+  color: greenyellow;
+  font-size: 40px;
+  position: fixed;
+  bottom: 15%;
+  right: 10px;
 }
 
 #productoStyle {
@@ -173,74 +148,24 @@
   padding-bottom: 0 auto;
 }
 
-/* cambios Boostrap  */
-#headerNav {
-  background-color: rgb(183, 183, 201);
+.iframeStyle {
+  margin: 5% 20%;
 }
 
-.parallax {
-  background-image: url(../img/candies-g623ec2e50_1920.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+#servicioStyle {
+  margin: 50px;
 }
 
-#enlaceWhatsapp {
-  color: greenyellow;
-  font-size: 40px;
-  position: fixed;
-  bottom: 15%;
-  right: 10px;
+#contactoFormulario {
+  margin: 5% 25%;
+  background-color: blanchedalmond;
 }
 
-.enlaceStyle {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-}
-.enlaceStyle:hover {
-  font-size: 35px;
+#ubacionStyle {
+  margin: 50px;
+  text-align: center;
 }
 
-#img-header {
-  margin-left: 45%;
-  width: 100px;
-}
-
-/* ANIMACIONES*/
-.tituloSeccion {
-  height: 100px;
-  width: 100px;
-  background-color: green;
-  animation-name: un_efecto;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 30s;
-  animation-delay: 1s;
-  margin-left: 35%;
-}
-
-@keyframes un_efecto {
-  0% {
-    width: 100px;
-  }
-  25% {
-    width: 300px;
-  }
-  50% {
-    width: 200px;
-    background-color: red;
-  }
-  75% {
-    width: 300px;
-  }
-  100% {
-    width: 100px;
-    background-color: green;
-  }
-}
-/* ---------------------- */
 @media (max-width: 767px) {
   #grilla {
     display: flex;
@@ -367,5 +292,80 @@
     height: 200px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footerStyle {
+  text-align: center;
+  background-color: black;
+  margin-top: 15%;
+}
+
+/* Menu Cambios con Boostrap */
+.menuStyle {
+  margin: 25px;
+  width: 95%;
+  padding-left: 27%;
+}
+.menuStyle:hover {
+  font-size: 20px;
+}
+
+.menuPages {
+  padding-right: 22%;
+  margin: 25px;
+  width: 95%;
+}
+
+/* cambios Boostrap  */
+.enlaceStyle {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+.enlaceStyle:hover {
+  font-size: 35px;
+}
+
+#img-header {
+  margin-left: 45%;
+  width: 100px;
+}
+
+/* ANIMACIONES*/
+.tituloSeccion {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 30s;
+  animation-delay: 1s;
+  margin-left: 35%;
+}
+
+@keyframes un_efecto {
+  0% {
+    width: 100px;
+  }
+  25% {
+    width: 300px;
+  }
+  50% {
+    width: 200px;
+    background-color: red;
+  }
+  75% {
+    width: 300px;
+  }
+  100% {
+    width: 100px;
+    background-color: green;
+  }
+}
+/* ---------------------- */
 
 /*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,38 @@
+.pagesStyle{
+    background-image: url(../img/store-g1cc1fbfc7_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#headerNav {
+grid-area: headerNav;
+text-align: center;
+margin-top: 30px;
+padding-top: 15px;
+background-image: linear-gradient(to top, blue, white)
+    }
+
+#headerNav{
+animation-duration: 5s;
+animation-name: aparecer;
+animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+0% {
+opacity: 0;
+    }
+100% {
+opacity: 1;
+    }
+}
+    
+#imagenIndex {
+grid-area: imagenIndex;
+text-align: center;
+}
+
+        
+#headerNav{
+    background-color: rgb(183, 183, 201);
+}

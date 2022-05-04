@@ -1,0 +1,50 @@
+.parallax{
+    background-image: url(../img/candies-g623ec2e50_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card1{
+    margin: 20px;
+    border-radius:20px;
+    text-align:center;
+    width:200px;
+	height:500px;
+	border:2px solid black;
+}
+.card2{
+    @extend .card1;
+    background-color: yellow
+}
+.card3{
+    @extend .card1;
+    background-color: orange
+}
+.card4{
+    @extend .card1;
+    background-color: aquamarine;
+}
+
+#enlaceWhatsapp{
+    color: greenyellow;
+    font-size: 40px;
+    position: fixed;
+    bottom: 15%;
+    right: 10px
+}
+#productoStyle{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.imgLogo{
+    padding-left: 50%;
+}
+.cards{
+    display: flex;
+    margin: 10px;
+}
+.botonCarrito{
+    padding-bottom: 0 auto;
+}

@@ -1,0 +1,112 @@
+@media (max-width: 767px){
+    #grilla{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+.seccionProductos{
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 18%;
+}
+.enlaceStyle{
+    font-size: 15px;
+}
+#cardStyle{
+    margin-left: 25%;
+}
+.iframeStyle{
+    margin: 5% 15%;
+    @include medidas (350px,250px);
+}
+#resumen {
+    text-align: center;
+    background-color: rgb(195, 195, 231);
+    padding: 10px;
+    }
+.footerStyle{
+    margin-top: 10%;
+}
+#imagenIndex{
+    width: 200px;
+    height: 300px;
+    margin-left: 25%;
+        }       
+#imagenOferta{
+    width: 120px;
+    height: 200px;
+    margin: 2px;
+    margin-left: 33%;   
+}
+
+#img-header{
+    margin-left: 38%;
+    width: 100px;
+    }     
+.menuPages{
+text-align: center;
+}
+}
+
+@media (min-width: 768px) {
+    #menu-nav{ 
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+    }
+    .seccionProductos{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    }
+    #imagenIndex{
+        width: 130px;
+        height: 180px;
+        margin-left: 20px;
+        transform: translate(10px, 100px);
+    }
+    #imagenOferta{
+        width: 100px;
+        height: 180px;
+        transition: 5s;
+    }
+#imagenOferta:hover{
+    width: 140px;
+    height: 250px;
+    }
+} 
+
+    
+@media (min-width: 1024px) {
+    .seccionProductos{
+    grid-template-columns: repeat(3, 1fr);
+        }
+    #imagenIndex{
+    width: 175px;
+    height: 250px;
+    margin-left: 20px;
+        }       
+    #imagenOferta{
+            width: 100px;
+            height: 180px;
+            transition: 5s;
+        }
+    #imagenOferta:hover{
+        width: 140px;
+        height: 250px;
+        }
+        }
+
+@media (min-width: 1200px) {
+    .seccionProductos{
+    grid-template-columns: repeat(4, 1fr);
+        }
+        #imagenIndex{
+            width: 175px;
+            height: 250px;
+            margin-left: 20px;
+                }       
+        #imagenOferta{
+            width: 135px;
+            height: 200px;
+                }
+        }
+    
