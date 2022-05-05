@@ -101,7 +101,7 @@
   background-attachment: fixed;
 }
 
-.card1, .card4, .card3, .card2 {
+.card1, .card6, .card5, .card4, .card3, .card2 {
   margin: 20px;
   border-radius: 20px;
   text-align: center;
@@ -120,6 +120,14 @@
 
 .card4 {
   background-color: aquamarine;
+}
+
+.card5 {
+  background-color: rgb(200, 127, 255);
+}
+
+.card6 {
+  background-color: rgb(127, 255, 244);
 }
 
 #enlaceWhatsapp {
@@ -146,6 +154,12 @@
 
 .botonCarrito {
   padding-bottom: 0 auto;
+}
+
+.tituloProducto {
+  margin-left: 30px;
+  background-color: yellow;
+  text-align: center;
 }
 
 .iframeStyle {
@@ -300,6 +314,7 @@
 .footerStyle {
   text-align: center;
   background-color: black;
+  color: white;
   margin-top: 15%;
 }
 
